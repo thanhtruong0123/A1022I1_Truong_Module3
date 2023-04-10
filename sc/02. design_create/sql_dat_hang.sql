@@ -1,5 +1,5 @@
-CREATE DATABASE sql_dat_hang;
-USE sql_dat_hang;
+CREATE DATABASE order_db;
+USE order_db;
 CREATE TABLE `don_dat_hang` (
   `so_dat_hang` int NOT NULL AUTO_INCREMENT,
   `ngay_dat_hang` date DEFAULT NULL,

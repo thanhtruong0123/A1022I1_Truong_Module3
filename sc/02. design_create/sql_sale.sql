@@ -1,5 +1,5 @@
-CREATE DATABASE sale_db;
-USE sale_db;
+CREATE DATABASE sale_manager_db;
+USE sale_manager_db;
 CREATE TABLE customers(
 customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 customer_name NVARCHAR(50) NOT NULL,

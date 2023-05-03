@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 50px repeat(5, 1fr) 50px;
+    grid-template-areas:
+    "header1 header1 header1 header1 header1 header1 header1 header1 header1 header1 header1 header1"
+    "header2 header2 header2 header2 header2 header2 header2 header2 header2 header2 header2 header2"
+    "sidebar sidebar sidebar mainbar mainbar mainbar mainbar mainbar mainbar mainbar mainbar mainbar"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.background-header {
+    background-color: white;
+    height: 105px;
+    width: 100%;
+    position: fixed;
+}
+.header1 {
+    grid-area: header1;
+    height: 50px;
+    background-color: #F5F6F6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo {
+    width: 150px;
+    padding: 10px;
+}
+.header2 {
+    grid-area: header2;
+    height: 50px;
+    background-color: #F5F6F6;
+    text-align: center;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    right: 0;
+}
+.header2 a, p {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+.header2 a:hover {
+    font-weight: bolder;
+    transition: 0.1s ease-in-out;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: #F5F6F6;
+}
+.boxvideo {
+    padding: 20px;
+}
+.boxvideo iframe {
+    width: 95%;
+    padding-bottom: 5px;
+}
+.boxvideo span {
+    padding: 10px;
+}
+.boxvideo span i {
+    font-size: smaller;
+    font-weight: bold;
+    color: #808085;
+}
+.web {
+    display: block;
+    padding-left: 10px;
+    font-size: x-large;
+    color: #808085;
+}
+.mainbar {
+    grid-area: mainbar;
+    background-color: #F5F6F6;
+}
+.mainbar iframe {
+    width: 90%;
+    height: 500px;
+    padding: 50px;
+    display: block;
+}
+.mainbar span {
+    padding-left: 50px;
+}
+.mainbar p {
+    width: 90%;
+    padding-left: 50px;
+}
+.mainbar p b {
+    font-size: 30px;
+    color: #808085;
+}
+.footer {
+    grid-area: footer;
+    height: 30px;
+    background-color: #d5d1d1;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer span {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+}

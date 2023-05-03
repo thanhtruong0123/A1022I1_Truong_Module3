@@ -95,13 +95,14 @@
 .mainbar span {
     padding-left: 50px;
 }
-.mainbar p {
+.mainbar b {
     width: 90%;
     padding-left: 50px;
 }
-.mainbar p b {
+.mainbar span b {
     font-size: 30px;
     color: #808085;
+    display: block;
 }
 .footer {
     grid-area: footer;

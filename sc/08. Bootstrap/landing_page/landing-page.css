@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+    background-color: #F3F3F3;
+}
+.navbar-brand img {
+    width: 100px;
+}
+.dropdown-menu {
+    width: 1000px;
+}
+#web-name {
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 5px;
+}
+.nav-small-item {
+    font-size: 12px;
+    margin: 2px;
+}
+.nav-item:hover {
+    text-decoration: underline;
+}
+.shop-deal {
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.dropdown-item-group-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 25px;
+}
+.right-item {
+    font-size: 12px;
+    color: #899191;
+    border: none;
+    margin: 10px;
+}
+.dropdown-item {
+    font-size: 12px;
+    margin: 10px;
+}
+.search-box {
+    margin: 5px;
+}
+.search-text {
+    width: 0;
+    border: none;
+}
+.search-button {
+    font-size: 12px;
+    color: #899191;
+    border: none;
+}
+.avatar {
+    width: 30px;
+    border-radius: 50%;
+}
+.first-img {
+    position: relative;
+}
+.first-img img {
+    width: 100%;
+}
+.first-content {
+    position: absolute;
+    top: 50px;
+}

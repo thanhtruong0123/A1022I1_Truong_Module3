@@ -1,7 +1,6 @@
-package com.example.server_time;
+package com.example.simple_login;
 
 import java.io.*;
-import java.util.Date;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
@@ -19,8 +18,7 @@ public class HelloServlet extends HttpServlet {
         // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        Date today = new Date();
-        out.println("<h1>" + today + "</h1>");
+        out.println("<h1>" + message + "</h1>");
         out.println("</body></html>");
     }
 

@@ -7,4 +7,3 @@ FROM services s
 JOIN contracts ctr ON s.service_id = ctr.service_id
 JOIN contract_details ctrd ON ctr.contract_id = ctrd.contract_id
 JOIN additional_services adds ON ctrd.additional_service_id = adds.additional_service_id
-GROUP BY 

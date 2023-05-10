@@ -11,7 +11,7 @@
             <tr>
                 <td>First operand: </td>
                 <td>
-                    <input type="number" name="operator1" placeholder="First operand">
+                    <input type="text" name="operand1" placeholder="First operand">
                 </td>
             </tr>
             <tr>
@@ -28,7 +28,7 @@
             <tr>
                 <td>Second operand:</td>
                 <td>
-                    <input type="number" name="operator2" placeholder="Second operand">
+                    <input type="text" name="operand2" placeholder="Second operand">
                 </td>
             </tr>
             <tr>

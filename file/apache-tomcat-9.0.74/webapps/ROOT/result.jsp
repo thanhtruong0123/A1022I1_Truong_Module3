@@ -15,7 +15,7 @@
   <p>
     Operand1: <%=request.getAttribute("operand1")%><br/>
     Operator: <%=request.getAttribute("operator")%><br/>
-    Operand2: <%=request.getAttribute("operator")%><br/>
+    Operand2: <%=request.getAttribute("operand2")%><br/>
     Result: <%=request.getAttribute("result")%><br/>
     <a href="index.jsp">Back to Calculator</a>
   </p>

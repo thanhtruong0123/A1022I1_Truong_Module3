@@ -26,7 +26,9 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Country</th>
-                <th>Actions</th>
+                <th>Edit</th>
+                <th>Delete</th>
+                <th>Filter</th>
             </tr>
             <c:forEach items="${listUser}" var="user">
                 <tr>
@@ -34,12 +36,14 @@
                     <td><c:out value="${user.name}"></c:out></td>
                     <td><c:out value="${user.email}"></c:out></td>
                     <td><c:out value="${user.country}"></c:out></td>
-                    <td>
-                        <a href="/users?action=edit&id=${user.id}">edit</a>
-                        <a href="/users?action=delete&id=${user.id}">delete</a>
-                    </td>
+                    <td><a href="/users?action=edit&id=${user.id}">edit</a></td>
+                    <td><a href="/users?action=delete&id=${user.id}">delete</a></td>
+                    <td><a href="/users?action=filter&country=${user.country}">filter</a></td>
                 </tr>
             </c:forEach>
+            <tr align="center">
+                <td colspan="7"><a href="/users?action=sort">Sort</a></td>
+            </tr>
         </table>
     </div>
 </body>

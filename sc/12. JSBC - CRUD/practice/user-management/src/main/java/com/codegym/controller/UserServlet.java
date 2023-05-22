@@ -8,6 +8,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "UserServlet", value = "/users")
@@ -36,6 +37,12 @@ public class UserServlet extends HttpServlet {
                 case "delete":
                     deleteUser(request, response);
                     break;
+                case "filter":
+                    filterList(request, response);
+                    break;
+                case "sort":
+                    sortList(request, response);
+                    break;
                 default:
                     showList(request, response);
                     break;
@@ -43,6 +50,21 @@ public class UserServlet extends HttpServlet {
         } catch (SQLException ex) {
             throw new ServletException(ex);
         }
+    }
+
+    private void sortList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        List<User> listUser = userDao.sortByName();
+        request.setAttribute("listUser", listUser);
+        request.getRequestDispatcher("WEB-INF/user/sort.jsp")
+                .forward(request, response);
+    }
+
+    private void filterList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String country = request.getParameter("country");
+        List<User> listUser = userDao.selectByCountry(country);
+        request.setAttribute("listUser", listUser);
+        request.getRequestDispatcher("WEB-INF/user/filter.jsp")
+                .forward(request, response);
     }
 
     private void showList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

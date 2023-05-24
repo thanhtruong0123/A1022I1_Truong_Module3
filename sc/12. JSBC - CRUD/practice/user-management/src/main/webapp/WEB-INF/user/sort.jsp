@@ -24,7 +24,7 @@
         <th>Email</th>
         <th>Country</th>
       </tr>
-      <c:forEach items="${listUser}" var="user">
+      <c:forEach items="${sortList}" var="user">
         <tr>
           <td><c:out value="${user.id}"></c:out></td>
           <td><c:out value="${user.name}"></c:out></td>
